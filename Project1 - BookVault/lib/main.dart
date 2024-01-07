@@ -528,14 +528,14 @@ class AddBookScreen extends StatelessWidget {
       'Romance',
       'Science Fiction',
       'History',
-    ]; // Add your own genres
+    ]; 
     List<String> shelfNumbers = [
       'Choose a shelf number',
       'A1',
       'B2',
       'C3',
       'D4'
-    ]; // Add your own shelf numbers
+    ]; 
 
     String selectedGenre = genres[0]; // Default genre
     String selectedShelfNumber = shelfNumbers[0]; // Default shelf number
@@ -580,7 +580,6 @@ class AddBookScreen extends StatelessWidget {
                 controller: publicationDateController,
                 decoration:
                     const InputDecoration(labelText: 'Publication Date'),
-                // You can use a date picker or another method to pick the date
               ),
               TextFormField(
                 controller: editionController,
